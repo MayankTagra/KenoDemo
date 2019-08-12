@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test" enabled="false">
+    <classes>
+      <class name="Test.Test1"/>
+      <class name="Package1.AppTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test thread-count="5" name="Test1" enabled="true">
+  <classes>
+  <class name="Test.EarnToken"/>
+  </classes>
+  
+  </test>
+  
+  <test thread-count="5" name="Test2" enabled="false">
+  <parameter name="browser" value="chrome"/>
+  <classes>
+  <class name="DataProvider.DataProviderTest"/>
+  </classes>
+  </test>
+  
+  <test thread-count="5" name="Test55" enabled="false">
+  <groups>
+  <run>
+  <include name="car"></include>
+  </run>
+  
+  </groups>
+  <classes>
+  <class name="DataProvider.GroupsExample"/>
+  </classes>
+  </test>
+  
+  <!-- In the above case you can see that only one group has been executed but you can also make group of groups as shown below -->
+  <test thread-count="5" name="Test66" enabled="true">
+	<groups>
+	<define name="all">
+	<include name="car"></include>
+	<include name="scooter"></include>
+	</define>
+	
+	<run>
+	<include name="all"></include>
+	</run>
+	</groups>
+	
+	<classes>
+	<class name="DataProvider.GroupsExample"/>
+	</classes>
+	
+
+  </test>
+  </suite> <!-- Suite -->

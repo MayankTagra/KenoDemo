@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="123533" started-at="2019-08-08T15:46:13Z" finished-at="2019-08-08T15:48:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="123533" started-at="2019-08-08T15:46:13Z" finished-at="2019-08-08T15:48:16Z">
+      <class name="Test.AddTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Test.AddTest@548e7350]" name="setup" is-config="true" duration-ms="592" started-at="2019-08-08T15:46:12Z" finished-at="2019-08-08T15:46:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testAddOnHomePage()[pri:0, instance:Test.AddTest@548e7350]" name="testAddOnHomePage" duration-ms="123446" started-at="2019-08-08T15:46:13Z" finished-at="2019-08-08T15:48:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddOnHomePage -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Test.AddTest@548e7350]" name="getResult" is-config="true" duration-ms="37" started-at="2019-08-08T15:48:16Z" finished-at="2019-08-08T15:48:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddOnHomePage status=SUCCESS method=AddTest.testAddOnHomePage()[pri:0, instance:Test.AddTest@548e7350] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Test.AddTest@548e7350]" name="tearDown" is-config="true" duration-ms="1973" started-at="2019-08-08T15:48:16Z" finished-at="2019-08-08T15:48:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Test.AddTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

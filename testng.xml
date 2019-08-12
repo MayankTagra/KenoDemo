@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test thread-count="5" name="Test1" enabled="true" parallel="classes">
+  <classes>
+  <class name="Test.AddTest"/>
+  <class name="Test.CompleteKenoTest"/>
+  <class name="Test.PlayBonusGame"/>
+  <class name="Test.SubmitKenoCard"/>
+  <class name="Test.EarnToken"/>
+
+  </classes>
+  
+  </test>
+  <!-- Add Test -->
+  <test thread-count="5" name="Test2" enabled="true" parallel="methods">
+  <classes>
+  <class name="Test.AddTest"></class>
+  </classes>
+  </test>
+  
+  <!-- Complete KenoTest -->
+  <test thread-count="5" name="Test3" enabled="true" parallel="methods">
+  <classes>
+  <class name="Test.CompleteKenoTest"/>
+  </classes>
+  </test>
+  
+  <!-- Earn Token -->
+  <test thread-count="5" name="Test4" enabled="true" parallel="methods">
+  <classes>
+  <class name="Test.EarnToken"/>
+  </classes>
+  </test>
+  
+  
+  
+</suite>
